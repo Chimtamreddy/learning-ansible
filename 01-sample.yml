@@ -1,7 +1,0 @@
-- name: Install Nginx
-  hosts: WEB
-  tasks:
-    - name: Install Httpd
-      ansible.builtin.dnf:
-        - name: httpd
-          state: installed
