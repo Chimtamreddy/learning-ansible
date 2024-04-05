@@ -1,7 +1,3 @@
 - name: Install Nginx
   hosts: WEB
   tasks:
-    - name: Install Nginx
-      ansible.builtin.dnf:
-        - name: nginx
-          state: installed
