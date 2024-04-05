@@ -1,0 +1,8 @@
+- name: Demo on Templates
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Template
+      ansible.builtin.template:
+        src: /test.txt
+        dest: /tmp/test.txt

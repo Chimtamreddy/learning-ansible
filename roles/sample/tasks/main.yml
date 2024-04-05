@@ -1,9 +1,19 @@
-- name: Nginx
-  ansible.builtin.dnf:
-    name: nginx
-    state: latest
+#- name: Nginx
+#  ansible.builtin.dnf:
+#    name: nginx
+#    state: latest
+#
+#- name: Start Nginx
+#  ansible.builtin.systemd:
+#    name: nginx
+#    state: started
 
-- name: Start Nginx
-  ansible.builtin.systemd:
-    name: nginx
-    state: started
+- name: Print Variable
+  ansible.builtin.debug:
+    msg: URL = {{ URL }}
+# Ansible access variable with two flower brackets
+- name: Print Task Variable
+  ansible.builtin.debug:
+    msg: URL = {{ URL }}
+  vars:
+    URL: tasks.google.com
