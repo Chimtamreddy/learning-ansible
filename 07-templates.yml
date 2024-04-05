@@ -1,6 +1,8 @@
 - name: Demo on Templates
   hosts: localhost
   connection: local
+  vars:
+    fruit_name: apple
   tasks:
     - name: Template
       ansible.builtin.template:
