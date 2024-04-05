@@ -4,5 +4,5 @@
   tasks:
     - name: Template
       ansible.builtin.template:
-        src: /test.txt
+        src: test.txt
         dest: /tmp/test.txt
