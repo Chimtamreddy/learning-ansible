@@ -12,3 +12,10 @@
       ansible.builtin.systemd:
         name: nginx
         state: started
+
+- name: Install Nginx
+  hosts: localhost
+  connection: local
+  become: true
+  roles:
+    - sample
