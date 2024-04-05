@@ -11,3 +11,9 @@
       ansible.builtin.systemd:
         name: nginx
         state: started
+
+- name: Install Nginx
+  hosts: WEB
+  become: true
+  roles:
+    - sample
